@@ -1,11 +1,11 @@
 //
-//  QMWave.h
-//  QMWaveView
+//  VHWave.h
+//  VHWaveView
 //
 //  Created by viktorhuang on 16/9/18.
 //  Copyright © 2016年 黄伟平. All rights reserved.
 //
-//  波浪模型，QMWaveView根据每个QMWave来画波浪
+//  波浪模型，VHWaveView根据每个VHWave来画波浪
 
 #import <UIKit/UIKit.h>
 
@@ -16,57 +16,57 @@
 /**
  *  波浪类型
  */
-typedef NS_OPTIONS(NSUInteger, QMWaveType)
+typedef NS_OPTIONS(NSUInteger, VHWaveType)
 {
     /**
      *  所有属性都是常量
      */
-    QMWaveAllConst                 = 0,
+    VHWaveAllConst                 = 0,
     /**
      *  速度是随机量
      */
-    QMWaveSpeedRandom              = 1 << 0,
+    VHWaveSpeedRandom              = 1 << 0,
     /**
      *  振幅是随机量
      */
-    QMWaveAmplitudeRandom          = 1 << 1,
+    VHWaveAmplitudeRandom          = 1 << 1,
     /**
      *  高度是随机量
      */
-    QMWaveHeightRandom             = 1 << 2,
+    VHWaveHeightRandom             = 1 << 2,
     /**
      *  水平位移是随机量
      */
-    QMWavePhaseRandom              = 1 << 3,
+    VHWavePhaseRandom              = 1 << 3,
     /**
      *  走势是随机量
      */
-    QMWaveTrendRandom              = 1 << 4,
+    VHWaveTrendRandom              = 1 << 4,
     /**
      *  频率是随机量
      */
-    QMWaveFrequencyRandom          = 1 << 5,
+    VHWaveFrequencyRandom          = 1 << 5,
     /**
      *  渐变色是随机量
      */
-    QMWaveGradientColorsRandom     = 1 << 6,
+    VHWaveGradientColorsRandom     = 1 << 6,
     /**
      *  渐变色断点是随机量
      */
-    QMWaveGradientLocationsRandom  = 1 << 7,
+    VHWaveGradientLocationsRandom  = 1 << 7,
     /**
      *  渐变色的开始点是随机量
      */
-    QMWaveGradientStartPointRandom = 1 << 8,
+    VHWaveGradientStartPointRandom = 1 << 8,
     /**
      *  渐变色的终点是随机量
      */
-    QMWaveGradientEndPointRandom   = 1 << 9,
+    VHWaveGradientEndPointRandom   = 1 << 9,
 };
 
 @interface VHWave : NSObject
 
-@property (nonatomic, assign) QMWaveType type;                                  // 波浪类型
+@property (nonatomic, assign) VHWaveType type;                                  // 波浪类型
 @property (nonatomic, assign) BOOL       isStroke;                              // 波浪是否为空心
 @property (nonatomic, assign) CGFloat    strokeHeight;                          // 波浪如果为空心，波浪线的“宽度”，注意宽度的含义，不是线的宽度，而是上下线的绝对距离
 

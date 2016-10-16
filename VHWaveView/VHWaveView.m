@@ -1,13 +1,13 @@
 //
-//  QMWaveView.m
-//  QMWaveView
+//  VHWaveView.m
+//  VHWaveView
 //
 //  Created by viktorhuang on 16/9/18.
 //  Copyright © 2016年 黄伟平. All rights reserved.
 //
 
 #import "VHWaveView.h"
-#import "QMSmoothRandomCreator.h"
+#import "VHSmoothRandomCreator.h"
 
 static CGFloat const OPTIMIZE_FRAME = 1;  // 优化帧率
 
@@ -16,7 +16,7 @@ static CGFloat const OPTIMIZE_FRAME = 1;  // 优化帧率
 @property (nonatomic, assign) BOOL hasWaving;
 @property (nonatomic, assign) BOOL isWaving;
 
-@property (nonatomic, strong) NSMutableArray<QMWave *> *waves;
+@property (nonatomic, strong) NSMutableArray<VHWave *> *waves;
 @property (nonatomic, assign) CGFloat waveHeight;
 @property (nonatomic, assign) CGFloat waveWidth;
 @property (nonatomic, strong) NSMutableArray<NSNumber *> *offsets;
@@ -26,7 +26,7 @@ static CGFloat const OPTIMIZE_FRAME = 1;  // 优化帧率
 
 @end
 
-@implementation QMWaveView
+@implementation VHWaveView
 
 #pragma mark Public Methods
 
@@ -52,22 +52,22 @@ static CGFloat const OPTIMIZE_FRAME = 1;  // 优化帧率
     return self;
 }
 
-- (void)addWave:(QMWave *)wave
+- (void)addWave:(VHWave *)wave
 {
     [self.waves addObject:wave];
 }
 
-- (void)removeWave:(QMWave *)wave
+- (void)removeWave:(VHWave *)wave
 {
     [self.waves removeObject:wave];
 }
 
-- (QMWave *)getWave:(int)index
+- (VHWave *)getWave:(int)index
 {
     return [self.waves objectAtIndex:index];
 }
 
-- (NSMutableArray<QMWave *> *)getWaves
+- (NSMutableArray<VHWave *> *)getWaves
 {
     return self.waves;
 }
@@ -77,7 +77,7 @@ static CGFloat const OPTIMIZE_FRAME = 1;  // 优化帧率
     [self.offsets removeAllObjects];
     [self.shapeLayers removeAllObjects];
     [self.gradientLayers removeAllObjects];
-    for (QMWave *wave in self.waves)
+    for (VHWave *wave in self.waves)
     {
         [self.offsets addObject:[NSNumber numberWithFloat:0]];
         CAShapeLayer *shapeLayer = [CAShapeLayer layer];
@@ -179,7 +179,7 @@ static CGFloat const OPTIMIZE_FRAME = 1;  // 优化帧率
 
 - (CGPathRef)getCurrentWavePath:(int)index
 {
-    QMWave *wave = [self.waves objectAtIndex:index];
+    VHWave *wave = [self.waves objectAtIndex:index];
     CGFloat height = [wave randomHeight] * self.waveHeight;
     CGFloat amplitude = [wave randomAmplitude];
     CGFloat trend = [wave randomTrend];

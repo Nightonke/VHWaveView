@@ -1,22 +1,22 @@
 //
-//  QMWave.m
-//  QMWaveView
+//  VHWave.m
+//  VHWaveView
 //
 //  Created by viktorhuang on 16/9/18.
 //  Copyright © 2016年 黄伟平. All rights reserved.
 //
 
 #import "VHWave.h"
-#import "QMSmoothRandomCreator.h"
+#import "VHSmoothRandomCreator.h"
 
 @interface VHWave ()
 
-@property (nonatomic, strong) QMSmoothRandomCreator *speedRandomCreator;
-@property (nonatomic, strong) QMSmoothRandomCreator *amplitudeRandomCreator;
-@property (nonatomic, strong) QMSmoothRandomCreator *heightRandomCreator;
-@property (nonatomic, strong) QMSmoothRandomCreator *phaseRandomCreator;
-@property (nonatomic, strong) QMSmoothRandomCreator *trendRandomCreator;
-@property (nonatomic, strong) QMSmoothRandomCreator *frequencyRandomCreator;
+@property (nonatomic, strong) VHSmoothRandomCreator *speedRandomCreator;
+@property (nonatomic, strong) VHSmoothRandomCreator *amplitudeRandomCreator;
+@property (nonatomic, strong) VHSmoothRandomCreator *heightRandomCreator;
+@property (nonatomic, strong) VHSmoothRandomCreator *phaseRandomCreator;
+@property (nonatomic, strong) VHSmoothRandomCreator *trendRandomCreator;
+@property (nonatomic, strong) VHSmoothRandomCreator *frequencyRandomCreator;
 
 @end
 
@@ -27,7 +27,7 @@
     self = [super init];
     if (nil != self)
     {
-        self.type = QMWaveAllConst;
+        self.type = VHWaveAllConst;
         self.isStroke = NO;
         self.strokeHeight = 2;
         
@@ -90,7 +90,7 @@
     _maxFrequency = maxFrequency;
     if (nil == self.frequencyRandomCreator)
     {
-        self.frequencyRandomCreator = [[QMSmoothRandomCreator alloc] initWithMax:self.maxFrequency withMin:self.minFrequency withPeriod:self.frequencyPeriod];
+        self.frequencyRandomCreator = [[VHSmoothRandomCreator alloc] initWithMax:self.maxFrequency withMin:self.minFrequency withPeriod:self.frequencyPeriod];
     }
     self.frequencyRandomCreator.maxValue = _maxFrequency;
     [self.frequencyRandomCreator setNextPeriod:300];
@@ -101,7 +101,7 @@
     _minFrequency = minFrequency;
     if (nil == self.frequencyRandomCreator)
     {
-        self.frequencyRandomCreator = [[QMSmoothRandomCreator alloc] initWithMax:self.maxFrequency withMin:self.minFrequency withPeriod:self.frequencyPeriod];
+        self.frequencyRandomCreator = [[VHSmoothRandomCreator alloc] initWithMax:self.maxFrequency withMin:self.minFrequency withPeriod:self.frequencyPeriod];
     }
     self.frequencyRandomCreator.minValue = _minFrequency;
 }
@@ -111,7 +111,7 @@
     _maxSpeed = maxSpeed;
     if (nil == self.speedRandomCreator)
     {
-        self.speedRandomCreator = [[QMSmoothRandomCreator alloc] initWithMax:self.maxSpeed withMin:self.minSpeed withPeriod:self.speedPeriod];
+        self.speedRandomCreator = [[VHSmoothRandomCreator alloc] initWithMax:self.maxSpeed withMin:self.minSpeed withPeriod:self.speedPeriod];
     }
     self.speedRandomCreator.maxValue = _maxSpeed;
 //    [self.speedRandomCreator setNextPeriod:300];
@@ -122,85 +122,85 @@
     _minSpeed = minSpeed;
     if (nil == self.speedRandomCreator)
     {
-        self.speedRandomCreator = [[QMSmoothRandomCreator alloc] initWithMax:self.maxSpeed withMin:self.minSpeed withPeriod:self.speedPeriod];
+        self.speedRandomCreator = [[VHSmoothRandomCreator alloc] initWithMax:self.maxSpeed withMin:self.minSpeed withPeriod:self.speedPeriod];
     }
     self.speedRandomCreator.minValue = _minSpeed;
 }
 
 - (CGFloat)randomSpeed
 {
-    if ((self.type & QMWaveSpeedRandom) == 0)
+    if ((self.type & VHWaveSpeedRandom) == 0)
     {
         return self.speed;
     }
     if (nil == self.speedRandomCreator)
     {
-        self.speedRandomCreator = [[QMSmoothRandomCreator alloc] initWithMax:self.maxSpeed withMin:self.minSpeed withPeriod:self.speedPeriod];
+        self.speedRandomCreator = [[VHSmoothRandomCreator alloc] initWithMax:self.maxSpeed withMin:self.minSpeed withPeriod:self.speedPeriod];
     }
     return [self.speedRandomCreator random];
 }
 
 - (CGFloat)randomAmplitude
 {
-    if ((self.type & QMWaveAmplitudeRandom) == 0)
+    if ((self.type & VHWaveAmplitudeRandom) == 0)
     {
         return self.amplitude;
     }
     if (nil == self.amplitudeRandomCreator)
     {
-        self.amplitudeRandomCreator = [[QMSmoothRandomCreator alloc] initWithMax:self.maxAmplitude withMin:self.minAmplitude withPeriod:self.amplitudePeriod];
+        self.amplitudeRandomCreator = [[VHSmoothRandomCreator alloc] initWithMax:self.maxAmplitude withMin:self.minAmplitude withPeriod:self.amplitudePeriod];
     }
     return [self.amplitudeRandomCreator random];
 }
 
 - (CGFloat)randomHeight
 {
-    if ((self.type & QMWaveHeightRandom) == 0)
+    if ((self.type & VHWaveHeightRandom) == 0)
     {
         return self.height;
     }
     if (nil == self.heightRandomCreator)
     {
-        self.heightRandomCreator = [[QMSmoothRandomCreator alloc] initWithMax:self.maxHeight withMin:self.minHeight withPeriod:self.heightPeriod];
+        self.heightRandomCreator = [[VHSmoothRandomCreator alloc] initWithMax:self.maxHeight withMin:self.minHeight withPeriod:self.heightPeriod];
     }
     return [self.heightRandomCreator random];
 }
 
 - (CGFloat)randomPhase
 {
-    if ((self.type & QMWavePhaseRandom) == 0)
+    if ((self.type & VHWavePhaseRandom) == 0)
     {
         return self.phase;
     }
     if (nil == self.phaseRandomCreator)
     {
-        self.phaseRandomCreator = [[QMSmoothRandomCreator alloc] initWithMax:self.maxPhase withMin:self.minPhase withPeriod:self.phasePeriod];
+        self.phaseRandomCreator = [[VHSmoothRandomCreator alloc] initWithMax:self.maxPhase withMin:self.minPhase withPeriod:self.phasePeriod];
     }
     return [self.phaseRandomCreator random];
 }
 
 - (CGFloat)randomTrend
 {
-    if ((self.type & QMWaveTrendRandom) == 0)
+    if ((self.type & VHWaveTrendRandom) == 0)
     {
         return self.trend;
     }
     if (nil == self.trendRandomCreator)
     {
-        self.trendRandomCreator = [[QMSmoothRandomCreator alloc] initWithMax:self.maxTrend withMin:self.minTrend withPeriod:self.trendPeriod];
+        self.trendRandomCreator = [[VHSmoothRandomCreator alloc] initWithMax:self.maxTrend withMin:self.minTrend withPeriod:self.trendPeriod];
     }
     return [self.trendRandomCreator random];
 }
 
 - (CGFloat)randomFrequency
 {
-    if ((self.type & QMWaveFrequencyRandom) == 0)
+    if ((self.type & VHWaveFrequencyRandom) == 0)
     {
         return self.frequency;
     }
     if (nil == self.frequencyRandomCreator)
     {
-        self.frequencyRandomCreator = [[QMSmoothRandomCreator alloc] initWithMax:self.maxFrequency withMin:self.minFrequency withPeriod:self.frequencyPeriod];
+        self.frequencyRandomCreator = [[VHSmoothRandomCreator alloc] initWithMax:self.maxFrequency withMin:self.minFrequency withPeriod:self.frequencyPeriod];
     }
     return [self.frequencyRandomCreator random];
 }

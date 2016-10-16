@@ -1,13 +1,13 @@
 //
-//  QMWaveView.h
-//  QMWaveView
+//  VHWaveView.h
+//  VHWaveView
 //
 //  Created by viktorhuang on 16/9/18.
 //  Copyright © 2016年 黄伟平. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "QMWave.h"
+#import "VHWave.h"
 
 @interface VHWaveView : UIView
 
@@ -16,14 +16,14 @@
  *
  *  @param wave 波浪
  */
-- (void)addWave:(QMWave *)wave;
+- (void)addWave:(VHWave *)wave;
 
 /**
  *  去掉一个波浪
  *
  *  @param wave 波浪
  */
-- (void)removeWave:(QMWave *)wave;
+- (void)removeWave:(VHWave *)wave;
 
 /**
  *  根据下标获取波浪
@@ -32,23 +32,23 @@
  *
  *  @return 波浪
  */
-- (QMWave *)getWave:(int)index;
+- (VHWave *)getWave:(int)index;
 
 /**
  *  获取所有的波浪
  *
  *  @return 所有的波浪
  */
-- (NSMutableArray<QMWave *> *)getWaves;
+- (NSMutableArray<VHWave *> *)getWaves;
 
 /**
- *  开始在QMWaveView上增加波浪的layer并开始波动
+ *  开始在VHWaveView上增加波浪的layer并开始波动
  *  注意，所有对wave的修改，都应该在这个函数之前做
  */
 - (void)start;
 
 /**
- *  去掉QMWaveView的所有波浪layer并停止波动
+ *  去掉VHWaveView的所有波浪layer并停止波动
  */
 - (void)stop;
 
