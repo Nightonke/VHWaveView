@@ -1,0 +1,390 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3783BC4D1DB366610066F011 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3783BC431DB366610066F011 /* AppDelegate.m */; };
+		3783BC4E1DB366610066F011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3783BC441DB366610066F011 /* Assets.xcassets */; };
+		3783BC521DB366610066F011 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3783BC4A1DB366610066F011 /* main.m */; };
+		3783BC531DB366610066F011 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3783BC4C1DB366610066F011 /* ViewController.m */; };
+		3783BC5B1DB366C30066F011 /* VHSmoothRandomCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3783BC561DB366C30066F011 /* VHSmoothRandomCreator.m */; };
+		3783BC5C1DB366C30066F011 /* VHWave.m in Sources */ = {isa = PBXBuildFile; fileRef = 3783BC581DB366C30066F011 /* VHWave.m */; };
+		3783BC5D1DB366C30066F011 /* VHWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3783BC5A1DB366C30066F011 /* VHWaveView.m */; };
+		BCE481ECE8492FCAC3CE5955 /* libPods-VHWaveView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FFA5196A491719E6C87DA9 /* libPods-VHWaveView.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3783BC271DB363900066F011 /* VHWaveView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VHWaveView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3783BC421DB366610066F011 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3783BC431DB366610066F011 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3783BC441DB366610066F011 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3783BC491DB366610066F011 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3783BC4A1DB366610066F011 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3783BC4B1DB366610066F011 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3783BC4C1DB366610066F011 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3783BC551DB366C30066F011 /* VHSmoothRandomCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VHSmoothRandomCreator.h; sourceTree = "<group>"; };
+		3783BC561DB366C30066F011 /* VHSmoothRandomCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VHSmoothRandomCreator.m; sourceTree = "<group>"; };
+		3783BC571DB366C30066F011 /* VHWave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VHWave.h; sourceTree = "<group>"; };
+		3783BC581DB366C30066F011 /* VHWave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VHWave.m; sourceTree = "<group>"; };
+		3783BC591DB366C30066F011 /* VHWaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VHWaveView.h; sourceTree = "<group>"; };
+		3783BC5A1DB366C30066F011 /* VHWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VHWaveView.m; sourceTree = "<group>"; };
+		3EB9F165960B8060743F3CD4 /* Pods-VHWaveView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VHWaveView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VHWaveView/Pods-VHWaveView.debug.xcconfig"; sourceTree = "<group>"; };
+		45FFA5196A491719E6C87DA9 /* libPods-VHWaveView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VHWaveView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0AFA81CD7EFFB327F9B29B0 /* Pods-VHWaveView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VHWaveView.release.xcconfig"; path = "Pods/Target Support Files/Pods-VHWaveView/Pods-VHWaveView.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3783BC241DB363900066F011 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCE481ECE8492FCAC3CE5955 /* libPods-VHWaveView.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3783BC1E1DB363900066F011 = {
+			isa = PBXGroup;
+			children = (
+				3783BC541DB366C30066F011 /* VHWaveView */,
+				3783BC411DB366610066F011 /* VHWaveViewExample */,
+				3783BC281DB363900066F011 /* Products */,
+				DAAA93BDFDA70DA92955E2B0 /* Pods */,
+				F55DEAAF79F3D86522A4D31D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3783BC281DB363900066F011 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3783BC271DB363900066F011 /* VHWaveView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3783BC411DB366610066F011 /* VHWaveViewExample */ = {
+			isa = PBXGroup;
+			children = (
+				3783BC421DB366610066F011 /* AppDelegate.h */,
+				3783BC431DB366610066F011 /* AppDelegate.m */,
+				3783BC441DB366610066F011 /* Assets.xcassets */,
+				3783BC491DB366610066F011 /* Info.plist */,
+				3783BC4A1DB366610066F011 /* main.m */,
+				3783BC4B1DB366610066F011 /* ViewController.h */,
+				3783BC4C1DB366610066F011 /* ViewController.m */,
+			);
+			path = VHWaveViewExample;
+			sourceTree = "<group>";
+		};
+		3783BC541DB366C30066F011 /* VHWaveView */ = {
+			isa = PBXGroup;
+			children = (
+				3783BC551DB366C30066F011 /* VHSmoothRandomCreator.h */,
+				3783BC561DB366C30066F011 /* VHSmoothRandomCreator.m */,
+				3783BC571DB366C30066F011 /* VHWave.h */,
+				3783BC581DB366C30066F011 /* VHWave.m */,
+				3783BC591DB366C30066F011 /* VHWaveView.h */,
+				3783BC5A1DB366C30066F011 /* VHWaveView.m */,
+			);
+			path = VHWaveView;
+			sourceTree = "<group>";
+		};
+		DAAA93BDFDA70DA92955E2B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3EB9F165960B8060743F3CD4 /* Pods-VHWaveView.debug.xcconfig */,
+				B0AFA81CD7EFFB327F9B29B0 /* Pods-VHWaveView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F55DEAAF79F3D86522A4D31D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45FFA5196A491719E6C87DA9 /* libPods-VHWaveView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3783BC261DB363900066F011 /* VHWaveView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3783BC3E1DB363900066F011 /* Build configuration list for PBXNativeTarget "VHWaveView" */;
+			buildPhases = (
+				4CA4DBC8A865AFBEA4EA1B92 /* [CP] Check Pods Manifest.lock */,
+				3783BC231DB363900066F011 /* Sources */,
+				3783BC241DB363900066F011 /* Frameworks */,
+				3783BC251DB363900066F011 /* Resources */,
+				D1B161A6EF5DD9C03734BFF0 /* [CP] Embed Pods Frameworks */,
+				0DB83DF3FB6363B633BBBFAE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VHWaveView;
+			productName = VHWaveView;
+			productReference = 3783BC271DB363900066F011 /* VHWaveView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3783BC1F1DB363900066F011 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "黄伟平";
+				TargetAttributes = {
+					3783BC261DB363900066F011 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = H7B6S6TRXA;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3783BC221DB363900066F011 /* Build configuration list for PBXProject "VHWaveView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3783BC1E1DB363900066F011;
+			productRefGroup = 3783BC281DB363900066F011 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3783BC261DB363900066F011 /* VHWaveView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3783BC251DB363900066F011 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3783BC4E1DB366610066F011 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DB83DF3FB6363B633BBBFAE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VHWaveView/Pods-VHWaveView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CA4DBC8A865AFBEA4EA1B92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D1B161A6EF5DD9C03734BFF0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VHWaveView/Pods-VHWaveView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3783BC231DB363900066F011 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3783BC531DB366610066F011 /* ViewController.m in Sources */,
+				3783BC521DB366610066F011 /* main.m in Sources */,
+				3783BC5C1DB366C30066F011 /* VHWave.m in Sources */,
+				3783BC5D1DB366C30066F011 /* VHWaveView.m in Sources */,
+				3783BC4D1DB366610066F011 /* AppDelegate.m in Sources */,
+				3783BC5B1DB366C30066F011 /* VHSmoothRandomCreator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3783BC3C1DB363900066F011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3783BC3D1DB363900066F011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3783BC3F1DB363900066F011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EB9F165960B8060743F3CD4 /* Pods-VHWaveView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = H7B6S6TRXA;
+				INFOPLIST_FILE = "$(SRCROOT)/VHWaveViewExample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nightonke.VHWaveView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3783BC401DB363900066F011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0AFA81CD7EFFB327F9B29B0 /* Pods-VHWaveView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = H7B6S6TRXA;
+				INFOPLIST_FILE = "$(SRCROOT)/VHWaveViewExample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nightonke.VHWaveView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3783BC221DB363900066F011 /* Build configuration list for PBXProject "VHWaveView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3783BC3C1DB363900066F011 /* Debug */,
+				3783BC3D1DB363900066F011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3783BC3E1DB363900066F011 /* Build configuration list for PBXNativeTarget "VHWaveView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3783BC3F1DB363900066F011 /* Debug */,
+				3783BC401DB363900066F011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3783BC1F1DB363900066F011 /* Project object */;
+}
